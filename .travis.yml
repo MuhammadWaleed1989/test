@@ -3,15 +3,15 @@ services:
   - docker
 
 scripts:
-  - docker build -t node .
-  - docker images node
+  - docker build -t node1 .
+  - docker images node1
 
 
 before_deploy:
-  - docker login -u muhammadwaleed1989 -p NewYear@@2020
+  - docker login -u MuhammadWaleed1989 -p NewYear@@2020
 
 deploy:
   provider: script
-  script: docker push node
+  script: docker push node1
   on:
-    branch: origin/master
+    branch: master
