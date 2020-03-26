@@ -6,11 +6,11 @@ scripts:
   - docker build -t node .
   - docker images node
 
-before_deploy:
-  - docker login -u muhammadwaleed1989 -p NewYear@@2020
+# before_deploy:
+#   - docker login -u muhammadwaleed1989 -p NewYear@@2020
 
-deploy:
-  provider: script
-  script: docker push node
-  on:
-    branch: master
+# deploy:
+#   provider: script
+#   script: docker push node
+#   on:
+#     branch: master
