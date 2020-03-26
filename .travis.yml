@@ -8,7 +8,7 @@ scripts:
 
 
 before_deploy:
-  - docker login -u MuhammadWaleed1989 -p NewYear@@2020
+  - docker login -u muhammadwaleed1989 -p NewYear@@2020
 
 deploy:
   provider: script
